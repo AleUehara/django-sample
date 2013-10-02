@@ -22,5 +22,6 @@ import banco
 
 urlpatterns = patterns('',
     url(r'^banco/', include('banco.urls')),
+    url(r'^$', include('banco.urls')),
     #url(r'^admin/', include(admin.site.urls)),
 )

@@ -1,7 +1,7 @@
 # Django settings for db_validation project.
 import os
 app_path = os.path.dirname(os.path.realpath(__file__))
-
+app_name = os.path.basename(os.path.normpath(app_path))
 
 
 DEBUG = True
@@ -104,7 +104,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'db_validation.urls'
+ROOT_URLCONF = app_name + '.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
